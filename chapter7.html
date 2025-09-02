@@ -15,7 +15,7 @@
         function handleClick() {
             setLikes(likes + 1);
         }
-        return 
+        return(
         <div>
             <Header title="Develop. Preview. Ship." />
             <ul>
@@ -24,7 +24,8 @@
                 ))}
             </ul>
             <button onClick={handleClick}>Like({likes})</button>
-        </div>;
+        </div>
+        );
     } 
 
       const root = ReactDOM.createRoot(domNode);
