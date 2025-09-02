@@ -11,6 +11,7 @@
       }
       function HomePage() {
         const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+        const [likes, setLikes] = React.useState(0);
         function handleClick() {
             console.log("increment like count")
         }
@@ -24,7 +25,6 @@
             </ul>
             <button onClick={handleClick}>Like</button>
         </div>;
-        const [likes, setLikes] = React.useState(0);
     } 
 
       const root = ReactDOM.createRoot(domNode);
